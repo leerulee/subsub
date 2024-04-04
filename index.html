@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    
+</head>
+<link rel="stylesheet" href="./css/reset.css">
+<style>
+.html{
+    scroll-behavior: smooth;
+}
+.header{
+z-index:2;
+width: 100%;
+height: 53vw;
+background-color: #A8B2C1;
+background-image: url(./images/_2_일소_MAIN.png);
+background-attachment: fixed;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center top;
+}
+
+.section{
+    max-width: 1920px;
+    z-index: 2;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.content1{
+    height: 30vw;
+    background-image: url(./images/01_0141_bw\ copy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    background-color: #fff;
+}
+.article_1{
+display: block;
+width: 8vw;
+height: 5vw;
+max-width: 300px;
+position: absolute;
+left: 30%;
+top: 12%;
+transform: translate(-50%, -50%);
+background-image: url(./images/Group\ 1.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+opacity: 0;
+
+}
+.content2{
+    height: 75vw;
+    /* background-color: #eee; */
+    position: relative;
+
+
+}
+
+.article_2{
+left: 50%;
+width: 45vw;
+height: 45vw;
+top: -50px;
+position: absolute;
+/* background-color: aqua; */
+transform: translate(-50%);
+transition: 0.3s;
+/* opacity: 0; */
+}
+
+.article_2 div{
+    
+}
+.box_wrap{
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.box1{
+    
+    flex: 2;
+    background-color: #bbb;
+    background-image: url(./images/1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.5vw;
+
+}
+.box2{
+    flex-direction: row;
+    flex: 1;
+    background-color: #752b2b;
+    background-image: url(./images/2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.5vw;
+}
+
+.box_wrap2{
+    display: flex;
+    width: 100%;
+    height: 24vw;
+    overflow: hidden;
+}
+
+.box3{
+    flex: 1;
+    background-color: #000000;
+    /* background-image: url(./images/3.png); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.5vw;
+    transition: 0.3s;
+    background-size: 100%;
+}
+.box3:hover{
+    background-size: 105%;
+}
+.box3 video{
+    width: 100%;
+}
+.box_wrap3{
+    width: 45vw;
+    height: 30vw;
+    /* background-color: #752b2b; */
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+    top: 50vw;
+}
+.box4{
+    z-index: 1;
+    position: absolute;
+    width: 23vw;
+    height: 23vw;
+    top: 0;
+    left: 10%;
+    background-image: url(./images/vid1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.box5{
+    position: absolute;
+    width: 23vw;
+    height: 23vw;
+    bottom: 0;
+    right: 10%;
+    background-image: url(./images/vid2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg{
+    width: 100%;
+    height:100vw;
+    background-image: url(./images/Rectangle\ 5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.5;
+    position: absolute;
+    top: 90vw;
+
+}
+.content3{
+    margin-top: 8vw;
+    height:35vw;
+    background-image: url(./images/01_0079_bw.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 2;
+
+}
+.text1{
+    position: absolute;
+    width: 5vw;
+    height: 3vw;
+    background-image: url(./images/매끄로운\ 코\,\ 일소밖에.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 35%;
+    top: 20%;
+    transform: translate(-50%);
+}
+</style>
+<body>
+    <div class="header">      
+    </div>
+    
+    <div class="section">
+
+        <div class="content1">
+            <div class="article_1"></div>
+        </div>
+
+        <div class="content2">
+            <div class="article_2">  
+                <div class="box_wrap">             
+                <div class="box1"></div>
+                <div class="box2"></div>
+            </div>   
+            <div class="box_wrap2">
+                <div class="box3">
+                    <video autoplay loop muted>
+                        <source src="./images/𝐢𝐥𝐬𝐨   매끄로운 코, 일소밖에   MAIN FILM.mp4" type="video/mp4">
+                      </video>
+                </div>
+                </div>
+                
+            </div>
+           
+            <div class="box_wrap3">
+                <div class="box4"></div>
+                <div class="box5"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content3">
+            <div class="text1"></div>
+        </div>
+        
+        <div class="content4">
+
+        </div>
+
+  
+
+</div>
+<div class="bg"></div>
+</body>
+
+<script>
+// GSAP 및 ScrollTrigger 플러그인을 등록
+gsap.registerPlugin(ScrollTrigger);
+
+// 애니메이션을 적용할 요소 선택
+const box = document.querySelector('.article_2');
+
+// ScrollTrigger를 사용하여 스크롤 애니메이션 적용
+gsap.to(box, {
+    
+  y: 50, // 애니메이션 적용할 속성 설정
+  duration: 1, // 애니메이션 지속 시간 설정
+  scrollTrigger: {
+    trigger: box, // 애니메이션을 트리거할 요소 설정
+    start: "top 80%", // 스크롤 위치에서 애니메이션이 시작될 지점 설정
+    end: "bottom 20%", // 스크롤 위치에서 애니메이션이 끝날 지점 설정
+    scrub: 3, // 스크롤에 따라 애니메이션 속도를 조절
+    
+  }
+});
+
+const floatingElement = document.querySelector('.box_wrap3');
+
+// ScrollTrigger를 사용하여 "둥실둥실" 떠있는 효과 적용
+gsap.to(floatingElement, {
+    
+  y: 10, // 애니메이션 적용할 y축 속성 설정
+  duration: 1, // 애니메이션 지속 시간 설정
+  yoyo: true, // 애니메이션을 왕복하도록 설정
+  repeat: -1, // 애니메이션을 무한 반복하도록 설정
+  ease: "power1.inOut" // 왕복하는 속도를 조절하는 이징 설정
+});
+
+gsap.to(".article_1", {
+
+  opacity: 1, // 초기 투명도 설정
+  y: 0, // 초기 y 위치 설정
+  duration: 2,
+
+  scrollTrigger: {
+    trigger: ".article_2", // 애니메이션을 트리거할 요소 설정
+    start: "top 80%", // 스크롤 위치에서 애니메이션이 시작될 지점 설정
+    // end: "top 30%", // 스크롤 위치에서 애니메이션이 끝날 지점 설정
+    scrub: false, // 스크롤에 따라 애니메이션 속도를 조절
+    ease: "power2.inOut", // 이징 설정
+
+  }
+});
+
+</script>
+</html>
